@@ -92,7 +92,7 @@ for tool_call in ai_msg.tool_calls:
     tool_result = selected_tool.invoke(tool_call)
     messages.append(tool_result)
 
-    print(f"         Result : {tool_result.content}")
+    print(f"Result : {tool_result.content}")
 
 # Pass everything back to the model for the final answer
 final_response = model_with_tools.invoke(messages)
